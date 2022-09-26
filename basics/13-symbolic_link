@@ -1,2 +1,2 @@
 #!/bin/bash
-ln -s $PWD ~/bin/ls
+ln -s /bin/ls  __ls__
