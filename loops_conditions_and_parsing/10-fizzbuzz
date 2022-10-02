@@ -1,16 +1,18 @@
 #!/usr/bin/env bash
 # script that displays numbers from 1 to 100
 
-x=1
-while [ "$x" -le 100 ]; do
-	if ! (( x % 3 )) && ! (( x % 5 )); then
+n=1
+
+while [ "$n" -le 100 ]; do
+	if ! (( n % 3 )) && ! (( n % 5 )); then
 		echo "FizzBuzz"
-	elif ! (( x % 3 )); then
-		echo "Fizz"echo "Fizz"
-	elif ! (( x % 5 )); then
+	elif ! (( n % 3 )); then
+		echo "Fizz"
+	elif ! (( n % 5 )); then
 		echo "Buzz"
 	else
-		echo "$x"
-	fi
-	((x++))
+		echo "$n"
+fi
+
+	((n++))
 done
