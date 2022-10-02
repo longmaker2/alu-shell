@@ -10,7 +10,7 @@ while [ "$x" -le 100 ]; do
 	elif ! (( x % 5 )); then
 		echo "Buzz"
 	else
-		echo "$n"
+		echo "$x"
 	fi
 	((x++))
 done
